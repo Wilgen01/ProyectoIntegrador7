@@ -1,4 +1,29 @@
-﻿Public Class Form1
+﻿Imports MySql.Data.MySqlClient
+Public Class Form1
+    Dim conexion As New MySqlConnection
+    Dim cadena As String
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            conexion.ConnectionString = "server=localhost; user=root; password=; database=primerempleo"
+            conexion.Open()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        cadena = "SELECT * FROM `profesional` WHERE `user` = '" & autenticacion.usuario & "'"
+        Dim comando As MySqlCommand
+        comando = New MySqlCommand(cadena, conexion)
+        Dim registros As MySqlDataReader
+        registros = comando.ExecuteReader()
+
+        If (registros.Read()) Then
+            nombre.Text = registros("nombre")
+            profesion.Text = registros("profesion")
+            edad.Text = registros("nacimiento")
+            descripcion.Text = registros("descripcion")
+        End If
+    End Sub
     Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
 
     End Sub
@@ -7,9 +32,7 @@
 
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
 
     Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
 

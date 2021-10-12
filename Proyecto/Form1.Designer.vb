@@ -24,12 +24,14 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.descripcion = New System.Windows.Forms.TextBox()
+        Me.edad = New System.Windows.Forms.TextBox()
+        Me.profesion = New System.Windows.Forms.TextBox()
+        Me.nombre = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -41,8 +43,6 @@ Partial Class Form1
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,16 +57,36 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Button8)
         Me.GroupBox2.Controls.Add(Me.Button7)
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
-        Me.GroupBox2.Controls.Add(Me.TextBox4)
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
+        Me.GroupBox2.Controls.Add(Me.descripcion)
+        Me.GroupBox2.Controls.Add(Me.edad)
+        Me.GroupBox2.Controls.Add(Me.profesion)
+        Me.GroupBox2.Controls.Add(Me.nombre)
         Me.GroupBox2.Controls.Add(Me.PictureBox1)
         Me.GroupBox2.Location = New System.Drawing.Point(211, 67)
+        Me.GroupBox2.MaximumSize = New System.Drawing.Size(551, 385)
+        Me.GroupBox2.MinimumSize = New System.Drawing.Size(551, 385)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(551, 385)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(169, 27)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(92, 13)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "Datos del usuario:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(38, 160)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(66, 13)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Descripcion:"
         '
         'Button8
         '
@@ -86,36 +106,36 @@ Partial Class Form1
         Me.Button7.Text = "Actualizar"
         Me.Button7.UseVisualStyleBackColor = True
         '
-        'TextBox5
+        'descripcion
         '
-        Me.TextBox5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.descripcion.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox5.Location = New System.Drawing.Point(24, 177)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(465, 20)
-        Me.TextBox5.TabIndex = 4
+        Me.descripcion.Location = New System.Drawing.Point(24, 177)
+        Me.descripcion.Name = "descripcion"
+        Me.descripcion.Size = New System.Drawing.Size(465, 20)
+        Me.descripcion.TabIndex = 4
         '
-        'TextBox4
+        'edad
         '
-        Me.TextBox4.Location = New System.Drawing.Point(162, 119)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(327, 20)
-        Me.TextBox4.TabIndex = 3
+        Me.edad.Location = New System.Drawing.Point(162, 119)
+        Me.edad.Name = "edad"
+        Me.edad.Size = New System.Drawing.Size(327, 20)
+        Me.edad.TabIndex = 3
         '
-        'TextBox3
+        'profesion
         '
-        Me.TextBox3.Location = New System.Drawing.Point(162, 80)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(327, 20)
-        Me.TextBox3.TabIndex = 2
+        Me.profesion.Location = New System.Drawing.Point(162, 80)
+        Me.profesion.Name = "profesion"
+        Me.profesion.Size = New System.Drawing.Size(327, 20)
+        Me.profesion.TabIndex = 2
         '
-        'TextBox2
+        'nombre
         '
-        Me.TextBox2.Location = New System.Drawing.Point(162, 43)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(327, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.nombre.Location = New System.Drawing.Point(162, 43)
+        Me.nombre.Name = "nombre"
+        Me.nombre.Size = New System.Drawing.Size(327, 20)
+        Me.nombre.TabIndex = 1
         '
         'PictureBox1
         '
@@ -248,24 +268,6 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(38, 160)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(66, 13)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Descripcion:"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(169, 27)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(92, 13)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Datos del usuario:"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -280,7 +282,10 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximumSize = New System.Drawing.Size(781, 493)
+        Me.MinimumSize = New System.Drawing.Size(781, 493)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
@@ -302,11 +307,11 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents profesion As TextBox
+    Friend WithEvents nombre As TextBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents descripcion As TextBox
+    Friend WithEvents edad As TextBox
     Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Label2 As Label
