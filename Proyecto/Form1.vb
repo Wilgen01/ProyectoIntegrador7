@@ -9,6 +9,7 @@ Public Class Form1
 
         Catch ex As Exception
             MsgBox(ex.Message)
+            MsgBox("error")
         End Try
 
         cadena = "SELECT * FROM `profesional` WHERE `user` = '" & autenticacion.usuario & "'"
