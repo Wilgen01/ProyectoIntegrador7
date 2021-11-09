@@ -72,5 +72,9 @@ Public Class Form4
 
     End Sub
 
+    Private Sub registro_Click(sender As Object, e As EventArgs) Handles registro.Click
+        Me.Hide()
+        Registros.Show()
 
+    End Sub
 End Class

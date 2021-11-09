@@ -23,6 +23,7 @@ Public Class Form1
             profesion.Text = registros("profesion")
             edad.Text = registros("nacimiento")
             descripcion.Text = registros("descripcion")
+            conexion.Close()
         End If
     End Sub
     Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
@@ -56,5 +57,32 @@ Public Class Form1
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Me.Hide()
         Form5.Show()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        conexion.Open()
+
+        Dim nombre As String
+        Dim profesion As String
+        Dim edad As String
+        Dim descripcion As String
+
+        nombre = Me.nombre.Text
+        profesion = Me.profesion.Text
+        edad = Me.edad.Text
+        descripcion = Me.descripcion.Text
+
+        cadena = "UPDATE `profesional` SET `nombre` = '" & nombre & "', `nacimiento` = '" & edad & "', `profesion` = '" & profesion & "', `descripcion` = '" & descripcion & "' WHERE `profesional`.`user` ='" & autenticacion.usuario & "' "
+        Dim comando As MySqlCommand
+        comando = New MySqlCommand(cadena, conexion)
+
+        Try
+            comando.ExecuteNonQuery()
+            MsgBox("usuario editado con exito")
+            conexion.Close()
+        Catch ex As Exception
+            MsgBox("Error inesperado el editar el usuario, por favor intente mas tarde")
+            conexion.Close()
+        End Try
     End Sub
 End Class
