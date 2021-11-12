@@ -85,4 +85,8 @@ Public Class Form1
             conexion.Close()
         End Try
     End Sub
+
+    Private Sub descripcion_TextChanged(sender As Object, e As EventArgs) Handles descripcion.TextChanged
+
+    End Sub
 End Class

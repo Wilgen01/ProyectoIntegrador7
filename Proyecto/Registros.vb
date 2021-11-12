@@ -57,5 +57,45 @@ Public Class Registros
         End Try
 
     End Sub
+    Private Sub correo_GotFocus(sender As Object, e As EventArgs) Handles correo.GotFocus
+        If (correo.Text = "example@gmail.com") Then
+            correo.Text = ""
+            correo.ForeColor = Color.LightGray
+        End If
+    End Sub
+    Private Sub correo_LostFocus(sender As Object, e As EventArgs) Handles correo.LostFocus
+        If (correo.Text = "") Then
+            correo.Text = "example.@gmail.com"
+            correo.ForeColor = Color.LightGray
+        End If
+    End Sub
+    Private Sub contrasena_GotFocus(sender As Object, e As EventArgs) Handles contrasena.GotFocus
+        If (contrasena.Text = "********") Then
+            contrasena.Text = ""
+            contrasena.ForeColor = Color.Black
+        End If
+    End Sub
+    Private Sub contrasena_LostFocus(sender As Object, e As EventArgs) Handles contrasena.LostFocus
+        If (contrasena.Text = "") Then
+            contrasena.Text = "********"
+            contrasena.ForeColor = Color.LightGray
+        End If
+    End Sub
+    Private Sub profesion_GotFocus(sender As Object, e As EventArgs) Handles profesion.GotFocus
+        If (profesion.Text = "Tecnico") Then
+            profesion.Text = ""
+            profesion.ForeColor = Color.LightGray
+        End If
+    End Sub
+    Private Sub profesion_LostFocus(sender As Object, e As EventArgs) Handles profesion.LostFocus
+        If (profesion.Text = "") Then
+            profesion.Text = "Tecnico"
+            profesion.ForeColor = Color.LightGray
+        End If
+    End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        Form4.Show()
+    End Sub
 End Class

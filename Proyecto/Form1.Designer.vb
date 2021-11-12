@@ -28,7 +28,6 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.descripcion = New System.Windows.Forms.TextBox()
         Me.edad = New System.Windows.Forms.TextBox()
         Me.profesion = New System.Windows.Forms.TextBox()
         Me.nombre = New System.Windows.Forms.TextBox()
@@ -43,6 +42,7 @@ Partial Class Form1
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.descripcion = New System.Windows.Forms.RichTextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,11 +53,11 @@ Partial Class Form1
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.White
         Me.GroupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.GroupBox2.Controls.Add(Me.descripcion)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Button8)
         Me.GroupBox2.Controls.Add(Me.Button7)
-        Me.GroupBox2.Controls.Add(Me.descripcion)
         Me.GroupBox2.Controls.Add(Me.edad)
         Me.GroupBox2.Controls.Add(Me.profesion)
         Me.GroupBox2.Controls.Add(Me.nombre)
@@ -105,16 +105,6 @@ Partial Class Form1
         Me.Button7.TabIndex = 5
         Me.Button7.Text = "Actualizar"
         Me.Button7.UseVisualStyleBackColor = True
-        '
-        'descripcion
-        '
-        Me.descripcion.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.descripcion.Location = New System.Drawing.Point(24, 177)
-        Me.descripcion.Name = "descripcion"
-        Me.descripcion.Size = New System.Drawing.Size(465, 20)
-        Me.descripcion.TabIndex = 4
         '
         'edad
         '
@@ -268,6 +258,14 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
+        'descripcion
+        '
+        Me.descripcion.Location = New System.Drawing.Point(41, 188)
+        Me.descripcion.Name = "descripcion"
+        Me.descripcion.Size = New System.Drawing.Size(448, 89)
+        Me.descripcion.TabIndex = 9
+        Me.descripcion.Text = ""
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -310,10 +308,10 @@ Partial Class Form1
     Friend WithEvents profesion As TextBox
     Friend WithEvents nombre As TextBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents descripcion As TextBox
     Friend WithEvents edad As TextBox
     Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents descripcion As RichTextBox
 End Class

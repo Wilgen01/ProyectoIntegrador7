@@ -41,7 +41,7 @@ Partial Class Form4
         Me.usuario.Name = "usuario"
         Me.usuario.Size = New System.Drawing.Size(310, 30)
         Me.usuario.TabIndex = 12
-        Me.usuario.Text = "Nombre de usuario"
+        Me.usuario.Text = "Wilgen"
         '
         'Label2
         '
@@ -62,7 +62,7 @@ Partial Class Form4
         Me.pass.Name = "pass"
         Me.pass.Size = New System.Drawing.Size(310, 30)
         Me.pass.TabIndex = 10
-        Me.pass.Text = "Contraseña"
+        Me.pass.Text = "12345"
         Me.pass.UseSystemPasswordChar = True
         '
         'Label1
