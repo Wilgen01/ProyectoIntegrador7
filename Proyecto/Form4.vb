@@ -60,6 +60,7 @@ Public Class Form4
 
 
         If (registros.Read()) Then
+
             autenticacion.usuario = usuario.Text
             conexion.Close()
             Me.Hide()
@@ -68,7 +69,8 @@ Public Class Form4
             MsgBox("Usuario o contraseña incorrecto")
             registros.Close()
         End If
- 
+
+
 
     End Sub
 
