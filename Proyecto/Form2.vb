@@ -41,5 +41,9 @@ Public Class Form2
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         Dim id As String = CInt(DataGridView1.Item(0, e.RowIndex).Value)
         autenticacion.contratoactual = id
+        Me.Close()
+        vistaContratos.Show()
     End Sub
+
+
 End Class

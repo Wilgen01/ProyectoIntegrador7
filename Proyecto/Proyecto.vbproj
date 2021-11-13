@@ -138,6 +138,12 @@
     <Compile Include="Registros.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="vistaContratos.Designer.vb">
+      <DependentUpon>vistaContratos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vistaContratos.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -163,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registros.resx">
       <DependentUpon>Registros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistaContratos.resx">
+      <DependentUpon>vistaContratos.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -209,6 +218,15 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_back_to.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_back_arrow.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -46,8 +46,8 @@ Partial Class Registros
         Me.Label8 = New System.Windows.Forms.Label()
         Me.profesion = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'usuario
@@ -268,27 +268,30 @@ Partial Class Registros
         Me.Button1.Text = "Registrar"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(12, 12)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(49, 24)
-        Me.Button2.TabIndex = 27
-        Me.Button2.Text = "Atras"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label7.Location = New System.Drawing.Point(111, 16)
+        Me.Label7.Location = New System.Drawing.Point(136, 17)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(223, 20)
         Me.Label7.TabIndex = 28
         Me.Label7.Text = "Registro Como Profesional"
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button9.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Image = Global.Proyecto.My.Resources.Resources.icons8_back_to1
+        Me.Button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button9.Location = New System.Drawing.Point(12, 12)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(42, 32)
+        Me.Button9.TabIndex = 29
+        Me.Button9.UseVisualStyleBackColor = False
         '
         'Registros
         '
@@ -297,8 +300,8 @@ Partial Class Registros
         Me.BackgroundImage = Global.Proyecto.My.Resources.Resources.R__1_
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(404, 450)
+        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.profesion)
@@ -326,6 +329,7 @@ Partial Class Registros
         Me.MaximumSize = New System.Drawing.Size(420, 489)
         Me.MinimumSize = New System.Drawing.Size(420, 486)
         Me.Name = "Registros"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registro"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -355,6 +359,6 @@ Partial Class Registros
     Friend WithEvents Label8 As Label
     Friend WithEvents profesion As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
     Friend WithEvents Label7 As Label
+    Friend WithEvents Button9 As Button
 End Class

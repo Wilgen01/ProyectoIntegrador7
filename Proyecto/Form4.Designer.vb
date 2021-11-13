@@ -83,7 +83,7 @@ Partial Class Form4
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button1.Location = New System.Drawing.Point(148, 401)
+        Me.Button1.Location = New System.Drawing.Point(151, 372)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(124, 37)
         Me.Button1.TabIndex = 8
@@ -103,12 +103,16 @@ Partial Class Form4
         '
         'registro
         '
-        Me.registro.Location = New System.Drawing.Point(177, 372)
+        Me.registro.BackColor = System.Drawing.Color.LightCyan
+        Me.registro.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.registro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.registro.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.registro.Location = New System.Drawing.Point(167, 415)
         Me.registro.Name = "registro"
-        Me.registro.Size = New System.Drawing.Size(75, 23)
+        Me.registro.Size = New System.Drawing.Size(87, 23)
         Me.registro.TabIndex = 13
         Me.registro.Text = "Registrarse"
-        Me.registro.UseVisualStyleBackColor = True
+        Me.registro.UseVisualStyleBackColor = False
         '
         'Form4
         '

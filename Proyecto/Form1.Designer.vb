@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.descripcion = New System.Windows.Forms.RichTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
@@ -31,7 +32,7 @@ Partial Class Form1
         Me.edad = New System.Windows.Forms.TextBox()
         Me.profesion = New System.Windows.Forms.TextBox()
         Me.nombre = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.imagen = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -42,9 +43,8 @@ Partial Class Form1
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.descripcion = New System.Windows.Forms.RichTextBox()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -61,7 +61,7 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.edad)
         Me.GroupBox2.Controls.Add(Me.profesion)
         Me.GroupBox2.Controls.Add(Me.nombre)
-        Me.GroupBox2.Controls.Add(Me.PictureBox1)
+        Me.GroupBox2.Controls.Add(Me.imagen)
         Me.GroupBox2.Location = New System.Drawing.Point(211, 67)
         Me.GroupBox2.MaximumSize = New System.Drawing.Size(551, 385)
         Me.GroupBox2.MinimumSize = New System.Drawing.Size(551, 385)
@@ -69,6 +69,14 @@ Partial Class Form1
         Me.GroupBox2.Size = New System.Drawing.Size(551, 385)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
+        '
+        'descripcion
+        '
+        Me.descripcion.Location = New System.Drawing.Point(41, 188)
+        Me.descripcion.Name = "descripcion"
+        Me.descripcion.Size = New System.Drawing.Size(448, 89)
+        Me.descripcion.TabIndex = 9
+        Me.descripcion.Text = ""
         '
         'Label3
         '
@@ -127,15 +135,15 @@ Partial Class Form1
         Me.nombre.Size = New System.Drawing.Size(327, 20)
         Me.nombre.TabIndex = 1
         '
-        'PictureBox1
+        'imagen
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(24, 32)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(109, 112)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.imagen.Image = CType(resources.GetObject("imagen.Image"), System.Drawing.Image)
+        Me.imagen.Location = New System.Drawing.Point(24, 32)
+        Me.imagen.Name = "imagen"
+        Me.imagen.Size = New System.Drawing.Size(109, 112)
+        Me.imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.imagen.TabIndex = 0
+        Me.imagen.TabStop = False
         '
         'TextBox1
         '
@@ -258,14 +266,6 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
-        'descripcion
-        '
-        Me.descripcion.Location = New System.Drawing.Point(41, 188)
-        Me.descripcion.Name = "descripcion"
-        Me.descripcion.Size = New System.Drawing.Size(448, 89)
-        Me.descripcion.TabIndex = 9
-        Me.descripcion.Text = ""
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -287,7 +287,7 @@ Partial Class Form1
         Me.Text = "Inicio"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imagen, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -307,7 +307,7 @@ Partial Class Form1
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents profesion As TextBox
     Friend WithEvents nombre As TextBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents imagen As PictureBox
     Friend WithEvents edad As TextBox
     Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
