@@ -16,7 +16,6 @@ Public Class Form3
             adaptador = New MySqlDataAdapter(consulta, Conexion)
             datos = New DataTable
             adaptador.Fill(datos)
-            MsgBox(datos.Rows.Count)
             Dim f As Integer
             Conexion.Close()
             datos2 = New DataTable()
@@ -24,7 +23,6 @@ Public Class Form3
             datos2.Columns.Add("nombre")
             datos2.Columns.Add("empresa")
             datos2.Columns.Add("descripcion")
-
 
             For f = 0 To datos.Rows.Count - 1
                 Conexion.Open()
@@ -39,25 +37,32 @@ Public Class Form3
             Next
             DataGridView1.DataSource = datos2
             DataGridView1.Columns(0).Visible = False
-            'Conexion.Close()
 
         Catch ex As Exception
+            Conexion.Close()
             MsgBox(ex.Message)
         End Try
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
+        Me.Close()
         Form1.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.Hide()
+        Me.Close()
         Form2.Show()
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Me.Hide()
+        Me.Close()
         Form5.Show()
+    End Sub
+
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        Dim id As String = CInt(DataGridView1.Item(0, e.RowIndex).Value)
+        autenticacion.contratoactual = id
+        Me.Close()
+        vistaContratos.Show()
     End Sub
 
 

@@ -43,7 +43,6 @@ Public Class Registros
         descripcion = Me.descripcion.Text
 
         cadena = "INSERT INTO `profesional` (`idProfesional`, `user`, `password`, `nombre`, `apellido`, `correo`, `nacimiento`, `profesion`, `egreso`, `universidad`, `tarjeta`, `descripcion`, `valoracion`) VALUES (NULL, '" & usuario & "', '" & contrasena & "', '" & nombre & "', '" & apellido & "', '" & correo & "', '" & nacimiento & "', '" & profesion & "', '" & egreso & "', '" & universidad & "', '" & tarjeta & "', '" & descripcion & "', NULL);"
-        MsgBox(cadena)
 
         Dim comando As MySqlCommand
         comando = New MySqlCommand(cadena, conexion)

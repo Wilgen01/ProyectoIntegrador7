@@ -34,6 +34,8 @@ Partial Class vistaContratos
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.descripcion = New System.Windows.Forms.RichTextBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -47,8 +49,6 @@ Partial Class vistaContratos
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.nombre = New System.Windows.Forms.Label()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.imagenEmpresa = New System.Windows.Forms.PictureBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
@@ -183,6 +183,8 @@ Partial Class vistaContratos
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.White
         Me.GroupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.GroupBox2.Controls.Add(Me.Button10)
+        Me.GroupBox2.Controls.Add(Me.Button6)
         Me.GroupBox2.Controls.Add(Me.Button9)
         Me.GroupBox2.Controls.Add(Me.descripcion)
         Me.GroupBox2.Controls.Add(Me.Label9)
@@ -196,8 +198,6 @@ Partial Class vistaContratos
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.nombre)
-        Me.GroupBox2.Controls.Add(Me.Button8)
-        Me.GroupBox2.Controls.Add(Me.Button6)
         Me.GroupBox2.Controls.Add(Me.imagenEmpresa)
         Me.GroupBox2.Controls.Add(Me.DataGridView1)
         Me.GroupBox2.Location = New System.Drawing.Point(211, 67)
@@ -205,6 +205,30 @@ Partial Class vistaContratos
         Me.GroupBox2.Size = New System.Drawing.Size(551, 385)
         Me.GroupBox2.TabIndex = 10
         Me.GroupBox2.TabStop = False
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.SystemColors.Window
+        Me.Button10.Image = CType(resources.GetObject("Button10.Image"), System.Drawing.Image)
+        Me.Button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button10.Location = New System.Drawing.Point(153, 338)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(157, 32)
+        Me.Button10.TabIndex = 34
+        Me.Button10.Text = "Cancelar Aplicacion"
+        Me.Button10.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.SystemColors.Window
+        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
+        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button6.Location = New System.Drawing.Point(43, 338)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(94, 32)
+        Me.Button6.TabIndex = 33
+        Me.Button6.Text = "Aplicar"
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'Button9
         '
@@ -339,24 +363,6 @@ Partial Class vistaContratos
         Me.nombre.TabIndex = 19
         Me.nombre.Text = "Nombre de la empresa"
         '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(124, 342)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
-        Me.Button8.TabIndex = 15
-        Me.Button8.Text = "Subir"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(43, 342)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 14
-        Me.Button6.Text = "Aplicar"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
         'imagenEmpresa
         '
         Me.imagenEmpresa.Image = CType(resources.GetObject("imagenEmpresa.Image"), System.Drawing.Image)
@@ -425,8 +431,6 @@ Partial Class vistaContratos
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label3 As Label
     Friend WithEvents nombre As Label
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button6 As Button
     Friend WithEvents imagenEmpresa As PictureBox
     Friend WithEvents cargo As Label
     Friend WithEvents Label6 As Label
@@ -439,4 +443,6 @@ Partial Class vistaContratos
     Friend WithEvents Label8 As Label
     Friend WithEvents descripcion As RichTextBox
     Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button6 As Button
 End Class

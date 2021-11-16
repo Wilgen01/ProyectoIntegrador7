@@ -85,4 +85,32 @@ Public Class vistaContratos
         Me.Close()
         Form2.Show()
     End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        conexion.Open()
+        cadena = "SELECT * FROM `contratosasignados` WHERE idUsuario = '" & autenticacion.usuario & "' && idContrato='" & autenticacion.contratoactual & "'"
+        Dim comando As MySqlCommand
+        comando = New MySqlCommand(cadena, conexion)
+        Dim registros As MySqlDataReader
+        registros = comando.ExecuteReader()
+
+
+        If (registros.Read()) Then
+            conexion.Close()
+            conexion.Open()
+            cadena = "DELETE FROM `contratosasignados` WHERE idUsuario = '" & autenticacion.usuario & "' && idContrato='" & autenticacion.contratoactual & "'"
+            comando = New MySqlCommand(cadena, conexion)
+            Try
+                comando.ExecuteNonQuery()
+                MsgBox("Cancelaste la aplicaion a este contrato con exito")
+                conexion.Close()
+            Catch ex As Exception
+                MsgBox("Error inesperado, por favor intentelo mas tarde")
+                conexion.Close()
+            End Try
+        Else
+            MsgBox("Aun no haz aplicado a este contrato")
+            conexion.Close()
+        End If
+    End Sub
 End Class
