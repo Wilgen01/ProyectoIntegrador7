@@ -41,8 +41,9 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -235,26 +236,12 @@ Partial Class Form1
         Me.Button4.Text = "Recomendados"
         Me.Button4.UseVisualStyleBackColor = False
         '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.Transparent
-        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
-        Me.Button6.Location = New System.Drawing.Point(70, 377)
-        Me.Button6.Name = "Button6"
-        Me.Button6.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Button6.Size = New System.Drawing.Size(58, 55)
-        Me.Button6.TabIndex = 5
-        Me.Button6.UseVisualStyleBackColor = False
-        '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.BackgroundImage = CType(resources.GetObject("GroupBox1.BackgroundImage"), System.Drawing.Image)
         Me.GroupBox1.Controls.Add(Me.Button6)
+        Me.GroupBox1.Controls.Add(Me.Button9)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
@@ -265,6 +252,36 @@ Partial Class Form1
         Me.GroupBox1.Size = New System.Drawing.Size(212, 459)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.Transparent
+        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
+        Me.Button6.Location = New System.Drawing.Point(100, 392)
+        Me.Button6.Name = "Button6"
+        Me.Button6.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Button6.Size = New System.Drawing.Size(58, 55)
+        Me.Button6.TabIndex = 8
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.Transparent
+        Me.Button9.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button9.Image = CType(resources.GetObject("Button9.Image"), System.Drawing.Image)
+        Me.Button9.Location = New System.Drawing.Point(24, 392)
+        Me.Button9.Name = "Button9"
+        Me.Button9.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Button9.Size = New System.Drawing.Size(58, 55)
+        Me.Button9.TabIndex = 7
+        Me.Button9.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -303,7 +320,6 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents Button6 As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents profesion As TextBox
     Friend WithEvents nombre As TextBox
@@ -314,4 +330,6 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents descripcion As RichTextBox
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button9 As Button
 End Class

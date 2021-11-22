@@ -5,6 +5,18 @@ Public Class Registros
     Private Sub Registro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.egreso.Format = DateTimePickerFormat.Custom
         Me.egreso.CustomFormat = "yyyy/MM/dd"
+
+        Me.usuario.Text = "wsgarciar"
+        Me.contrasena.Text = "123456"
+        Me.nombre.Text = "Wilgen Stiven"
+        Me.apellidos.Text = "Garcia Rodriguez"
+        Me.correo.Text = "wsgarciar@sanmateo.edu.co"
+        Me.edad.Text = "20"
+        Me.profesion.Text = "Ingeniero de Sistemas"
+        Me.universidad.Text = "Fundacion Universitaria San Mateo"
+        Me.tarjeta.Text = "100684444"
+        Me.descripcion.Text = "Ingeniero de sistemas egresado de la fundación universitaria san mateo, con conocimientos en desarrollo de aplicaciones web y de escritorio.."
+
         Try
             conexion.ConnectionString = "server=localhost; user=root; password=; database=primerempleo"
             conexion.Open()
@@ -26,6 +38,8 @@ Public Class Registros
         Dim universidad As String
         Dim tarjeta As String
         Dim descripcion As String
+
+
 
         Me.egreso.Format = DateTimePickerFormat.Custom
         Me.egreso.CustomFormat = "yyyy/MM/dd"
@@ -57,40 +71,40 @@ Public Class Registros
 
     End Sub
     Private Sub correo_GotFocus(sender As Object, e As EventArgs) Handles correo.GotFocus
-        If (correo.Text = "example@gmail.com") Then
-            correo.Text = ""
-            correo.ForeColor = Color.LightGray
-        End If
+        'If (correo.Text = "example@gmail.com") Then
+        'correo.Text = ""
+        'correo.ForeColor = Color.LightGray
+        'End If
     End Sub
     Private Sub correo_LostFocus(sender As Object, e As EventArgs) Handles correo.LostFocus
-        If (correo.Text = "") Then
-            correo.Text = "example.@gmail.com"
-            correo.ForeColor = Color.LightGray
-        End If
+        'If (correo.Text = "") Then
+        'correo.Text = "example.@gmail.com"
+        'correo.ForeColor = Color.LightGray
+        'End If
     End Sub
     Private Sub contrasena_GotFocus(sender As Object, e As EventArgs) Handles contrasena.GotFocus
-        If (contrasena.Text = "********") Then
-            contrasena.Text = ""
-            contrasena.ForeColor = Color.Black
-        End If
+        'If (contrasena.Text = "********") Then
+        'contrasena.Text = ""
+        'contrasena.ForeColor = Color.Black
+        'End If
     End Sub
     Private Sub contrasena_LostFocus(sender As Object, e As EventArgs) Handles contrasena.LostFocus
-        If (contrasena.Text = "") Then
-            contrasena.Text = "********"
-            contrasena.ForeColor = Color.LightGray
-        End If
+        'If (contrasena.Text = "") Then
+        'contrasena.Text = "********"
+        'contrasena.ForeColor = Color.LightGray
+        'End If
     End Sub
     Private Sub profesion_GotFocus(sender As Object, e As EventArgs) Handles profesion.GotFocus
-        If (profesion.Text = "Tecnico") Then
-            profesion.Text = ""
-            profesion.ForeColor = Color.LightGray
-        End If
+        'If (profesion.Text = "Tecnico") Then
+        'profesion.Text = ""
+        'profesion.ForeColor = Color.LightGray
+        'End If
     End Sub
     Private Sub profesion_LostFocus(sender As Object, e As EventArgs) Handles profesion.LostFocus
-        If (profesion.Text = "") Then
-            profesion.Text = "Tecnico"
-            profesion.ForeColor = Color.LightGray
-        End If
+        'If (profesion.Text = "") Then
+        'profesion.Text = "Tecnico"
+        'profesion.ForeColor = Color.LightGray
+        'End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs)
@@ -102,4 +116,5 @@ Public Class Registros
         Me.Close()
         Form4.Show()
     End Sub
+
 End Class

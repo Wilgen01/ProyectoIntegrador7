@@ -31,6 +31,7 @@ Partial Class Form2
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -123,6 +124,7 @@ Partial Class Form2
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.BackgroundImage = CType(resources.GetObject("GroupBox1.BackgroundImage"), System.Drawing.Image)
+        Me.GroupBox1.Controls.Add(Me.Button6)
         Me.GroupBox1.Controls.Add(Me.Button7)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
@@ -135,6 +137,21 @@ Partial Class Form2
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.Transparent
+        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
+        Me.Button6.Location = New System.Drawing.Point(102, 394)
+        Me.Button6.Name = "Button6"
+        Me.Button6.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Button6.Size = New System.Drawing.Size(58, 55)
+        Me.Button6.TabIndex = 8
+        Me.Button6.UseVisualStyleBackColor = False
+        '
         'Button7
         '
         Me.Button7.BackColor = System.Drawing.Color.Transparent
@@ -143,11 +160,11 @@ Partial Class Form2
         Me.Button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
-        Me.Button7.Location = New System.Drawing.Point(70, 377)
+        Me.Button7.Location = New System.Drawing.Point(26, 394)
         Me.Button7.Name = "Button7"
         Me.Button7.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Button7.Size = New System.Drawing.Size(58, 55)
-        Me.Button7.TabIndex = 6
+        Me.Button7.TabIndex = 7
         Me.Button7.UseVisualStyleBackColor = False
         '
         'Button4
@@ -245,6 +262,7 @@ Partial Class Form2
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Button7 As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
 End Class

@@ -109,8 +109,14 @@ Public Class vistaContratos
                 conexion.Close()
             End Try
         Else
-            MsgBox("Aun no haz aplicado a este contrato")
+            MsgBox("Aun no has aplicado a este contrato")
             conexion.Close()
         End If
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        autenticacion.usuario = ""
+        Me.Close()
+        Form4.Show()
     End Sub
 End Class

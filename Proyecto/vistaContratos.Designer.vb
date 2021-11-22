@@ -25,6 +25,7 @@ Partial Class vistaContratos
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(vistaContratos))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -63,6 +64,7 @@ Partial Class vistaContratos
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.BackgroundImage = CType(resources.GetObject("GroupBox1.BackgroundImage"), System.Drawing.Image)
         Me.GroupBox1.Controls.Add(Me.Button7)
+        Me.GroupBox1.Controls.Add(Me.Button8)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
@@ -82,12 +84,27 @@ Partial Class vistaContratos
         Me.Button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
-        Me.Button7.Location = New System.Drawing.Point(70, 377)
+        Me.Button7.Location = New System.Drawing.Point(102, 394)
         Me.Button7.Name = "Button7"
         Me.Button7.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Button7.Size = New System.Drawing.Size(58, 55)
-        Me.Button7.TabIndex = 6
+        Me.Button7.TabIndex = 8
         Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.Transparent
+        Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
+        Me.Button8.Location = New System.Drawing.Point(26, 394)
+        Me.Button8.Name = "Button8"
+        Me.Button8.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Button8.Size = New System.Drawing.Size(58, 55)
+        Me.Button8.TabIndex = 7
+        Me.Button8.UseVisualStyleBackColor = False
         '
         'Button4
         '
@@ -401,6 +418,7 @@ Partial Class vistaContratos
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.GroupBox2)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximumSize = New System.Drawing.Size(781, 493)
         Me.MinimumSize = New System.Drawing.Size(781, 493)
         Me.Name = "vistaContratos"
@@ -418,7 +436,6 @@ Partial Class vistaContratos
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button7 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
@@ -445,4 +462,6 @@ Partial Class vistaContratos
     Friend WithEvents Button9 As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
 End Class

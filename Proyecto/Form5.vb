@@ -1,5 +1,5 @@
 ﻿Public Class Form5
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -18,7 +18,9 @@
         Form3.Show()
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        autenticacion.usuario = ""
+        Me.Close()
+        Form4.Show()
     End Sub
 End Class

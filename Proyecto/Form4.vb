@@ -50,7 +50,8 @@ Public Class Form4
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        conexion.Close()
+        conexion.Open()
 
         cadena = "SELECT * FROM `profesional` WHERE `user` = '" & usuario.Text & "' AND `password` = '" & pass.Text & "'"
         Dim comando As MySqlCommand
@@ -67,6 +68,7 @@ Public Class Form4
             Form1.Show()
         Else
             MsgBox("Usuario o contraseña incorrecto")
+            conexion.Close()
             registros.Close()
         End If
 

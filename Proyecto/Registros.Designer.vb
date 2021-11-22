@@ -81,9 +81,10 @@ Partial Class Registros
         '
         'contrasena
         '
-        Me.contrasena.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.contrasena.ForeColor = System.Drawing.Color.Black
         Me.contrasena.Location = New System.Drawing.Point(140, 104)
         Me.contrasena.Name = "contrasena"
+        Me.contrasena.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.contrasena.Size = New System.Drawing.Size(240, 20)
         Me.contrasena.TabIndex = 12
         Me.contrasena.Text = "********"
@@ -137,7 +138,7 @@ Partial Class Registros
         '
         'correo
         '
-        Me.correo.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.correo.ForeColor = System.Drawing.Color.Black
         Me.correo.Location = New System.Drawing.Point(140, 182)
         Me.correo.Name = "correo"
         Me.correo.Size = New System.Drawing.Size(240, 20)
@@ -247,7 +248,7 @@ Partial Class Registros
         '
         'profesion
         '
-        Me.profesion.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.profesion.ForeColor = System.Drawing.Color.Black
         Me.profesion.Location = New System.Drawing.Point(140, 231)
         Me.profesion.Name = "profesion"
         Me.profesion.Size = New System.Drawing.Size(240, 20)
